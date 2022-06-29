@@ -10,6 +10,8 @@ This repository contains minimal packages to control the bunker robot using ROS.
 ## Supported Hardware
 
 * Bunker
+* Bunker_mini
+* Bunker pro
  
 
 ## Basic usage of the ROS packages
