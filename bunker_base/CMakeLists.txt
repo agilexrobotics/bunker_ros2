@@ -26,6 +26,7 @@ find_package(nav_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
+find_package(tf2_geometry_msgs)
 
 find_package(bunker_msgs REQUIRED)
 find_package(ugv_sdk REQUIRED)
@@ -57,7 +58,7 @@ add_executable(bunker_base_node
     src/bunker_base_ros.cpp
     src/bunker_base_node.cpp)
 target_link_libraries(bunker_base_node ugv_sdk)
-ament_target_dependencies(bunker_base_node rclcpp tf2 tf2_ros std_msgs nav_msgs sensor_msgs bunker_msgs)
+ament_target_dependencies(bunker_base_node rclcpp tf2 tf2_ros std_msgs nav_msgs sensor_msgs bunker_msgs tf2_geometry_msgs)
 
 install(TARGETS bunker_base_node
   DESTINATION lib/${PROJECT_NAME})
