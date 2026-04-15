@@ -19,7 +19,7 @@ uint16 error_code
 float64 battery_voltage
 
 # motor state
-BunkerActuatorState[3] actuator_states
+BunkerActuatorState[2] actuator_states
 
 # bool light_control_enabled
 # TracerLightState front_light_state
